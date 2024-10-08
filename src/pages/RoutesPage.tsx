@@ -1,5 +1,5 @@
 import React from 'react'
-import { Clock, DollarSign, Star } from 'lucide-react'
+import { MapPin, Clock, DollarSign, Star } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const routes = [
@@ -46,20 +46,27 @@ const RoutesPage: React.FC = () => {
       <div className="mb-12">
         <h2 className="text-3xl font-bold mb-4">Mapa de Rutas</h2>
         <div className="w-full h-0 pb-[56.25%] relative bg-gray-200 rounded-lg overflow-hidden">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <img 
-              src="https://i.ibb.co/1KmgsVj/Opera-Instant-nea-2024-10-08-163727-www-scribblemaps-com.png" 
-              alt="Mapa de Lima"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute top-4 left-4 bg-white p-2 rounded shadow">
-              <p className="font-bold">Rutas de Bicitaxi Lima</p>
-              <ul className="text-sm">
-                <li>• Centro Histórico</li>
-                <li>• Miraflores - Barranco</li>
-                <li>• Lima Colonial</li>
-              </ul>
-            </div>
+          <img 
+            src="https://i.imgur.com/FvpWDWM.png" 
+            alt="Mapa detallado de Lima con rutas de Bicitaxi"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute top-4 left-4 bg-white p-2 rounded shadow">
+            <p className="font-bold">Rutas de Bicitaxi Lima</p>
+            <ul className="text-sm">
+              <li className="flex items-center">
+                <MapPin size={16} className="text-red-500 mr-2" />
+                Centro Histórico
+              </li>
+              <li className="flex items-center">
+                <MapPin size={16} className="text-blue-500 mr-2" />
+                Miraflores - Barranco
+              </li>
+              <li className="flex items-center">
+                <MapPin size={16} className="text-green-500 mr-2" />
+                Lima Colonial
+              </li>
+            </ul>
           </div>
         </div>
       </div>
