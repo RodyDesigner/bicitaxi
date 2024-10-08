@@ -8,24 +8,24 @@ const routes = [
     name: 'Ruta del Centro Histórico',
     description: 'Recorre los principales monumentos y plazas del centro de Lima.',
     duration: '2 horas',
-    price: 'S/. 50',
-    image: 'https://images.unsplash.com/photo-1578653816015-6b31a63d1737?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+    price: 'S/. 20',
+    image: 'https://images.unsplash.com/photo-1467139938629-03d06ee112cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     id: 'miraflores-barranco',
     name: 'Ruta Miraflores - Barranco',
     description: 'Disfruta de la costa limeña y sus distritos más bohemios.',
     duration: '3 horas',
-    price: 'S/. 75',
-    image: 'https://images.unsplash.com/photo-1589909202802-8f4aadce1849?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+    price: 'S/. 45',
+    image: 'https://images.unsplash.com/photo-1723134086999-b5a4deabd247?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     id: 'lima-colonial',
     name: 'Ruta Lima Colonial',
     description: 'Viaja en el tiempo y conoce la arquitectura colonial de Lima.',
     duration: '2.5 horas',
-    price: 'S/. 60',
-    image: 'https://images.unsplash.com/photo-1584999872814-569a6c3d7031?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+    price: 'S/. 30',
+    image: 'https://images.unsplash.com/photo-1508957454729-17eb89cd4b67?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   }
 ]
 
@@ -45,13 +45,17 @@ const RoutesPage: React.FC = () => {
 
       <div className="mb-12">
         <h2 className="text-3xl font-bold mb-4">Mapa de Rutas</h2>
-        <div className="w-full h-0 pb-[56.25%] relative bg-gray-200 rounded-lg overflow-hidden">
-          <img 
-            src="https://i.imgur.com/FvpWDWM.png" 
-            alt="Mapa detallado de Lima con rutas de Bicitaxi"
-            className="absolute inset-0 w-full h-full object-cover"
+        <div className="w-full h-[450px] relative bg-gray-200 rounded-lg overflow-hidden">
+          <iframe
+            title="Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d9762.402196671395!2d-77.04918773357359!3d-12.119161262544383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x9105c82109b00d75%3A0x4968160a9f272918!2sParque%20del%20Amor%2C%20Malec%C3%B3n%20Cisneros%2C%20Miraflores!3m2!1d-12.126887499999999!2d-77.0366146!4m5!1s0x9105c835cc780d3d%3A0x670924b6a70ec1ec!2sEstatua%20de%20Carlos%20Izaguirre%2C%20VWQX%2BC78%2C%20Miraflores%2015074!3m2!1d-12.1114561!2d-77.0517875!5e1!3m2!1ses!2spe!4v1728431442394!5m2!1ses!2spe"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
           />
-          <div className="absolute top-4 left-4 bg-white p-2 rounded shadow">
+          <div className="absolute top-4 right-4 bg-white p-2 rounded shadow">
             <p className="font-bold">Rutas de Bicitaxi Lima</p>
             <ul className="text-sm">
               <li className="flex items-center">

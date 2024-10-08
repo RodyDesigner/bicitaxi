@@ -30,7 +30,7 @@ const ReservePage: React.FC = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="relative h-64 mb-8 rounded-lg overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1581373449483-37449f962b6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          src="https://images.unsplash.com/photo-1683655687864-2fc8475af0db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Bicitaxi recorriendo Lima al atardecer"
           className="w-full h-full object-cover"
         />
@@ -161,12 +161,12 @@ const ReservePage: React.FC = () => {
 
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
         <img
-          src="https://images.unsplash.com/photo-1596306499317-8490232098fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+          src="https://pbs.twimg.com/media/DhUyo-zXUAAz79v?format=jpg&name=large"
           alt="Pareja disfrutando un paseo en bicitaxi"
           className="w-full h-64 object-cover rounded-lg shadow-md"
         />
         <img
-          src="https://images.unsplash.com/photo-1581373449483-37449f962b6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+          src="https://pbs.twimg.com/media/ELNrOtWWoAELCRu?format=jpg&name=large"
           alt="Bicitaxi en el centro histórico de Lima"
           className="w-full h-64 object-cover rounded-lg shadow-md"
         />
