@@ -1,5 +1,6 @@
 import React from 'react'
 import { Leaf, Heart, Users } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const HomePage: React.FC = () => {
   return (
@@ -15,16 +16,12 @@ const HomePage: React.FC = () => {
           <h1 className="text-4xl font-bold mb-4">Bicitaxi Lima</h1>
           <p className="text-xl mb-6">Recorre Lima de manera ecológica y divertida</p>
           <div className="space-x-4">
-          <a href="/reservar">
-            <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-              Reservar un Viaje
-            </button>
-          </a>
-          <a href="/rutas">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-              Conoce nuestras Rutas
-            </button>
-          </a>
+          <Link to="/reservar" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded inline-block">
+            Reservar un Viaje
+          </Link>
+          <Link to="/rutas" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded inline-block">
+            Conoce nuestras Rutas
+          </Link>
           </div>
         </div>
       </div>
